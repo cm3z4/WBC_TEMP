@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+:root {
+  --accent: #353535;
+  --gray: #777;
+}
+
+@font-face {
+  font-family: cornerstone;
+  src: url(../fonts/Cornerstone.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav {
+  border-bottom: 1px solid #777;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+#masthead {
+  background-image: url("../images/masthead-bw.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  text-align: center;
+}
+
+#mast-sub-banner {
+  color: #353535 !important;
+  display: inline-block;
+  padding: 1rem;
+  background-color: var(--light);
+  border-radius: 0.25rem;
+}
+
+.custom-shadow {
+  -webkit-box-shadow: 4px 4px var(--accent);
+  -moz-box-shadow: 4px 4px var(--accent);
+  box-shadow: 4px 4px var(--accent);
+}
+
+.card-footers {
+  padding: 0 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  #masthead {
+    background-attachment: scroll;
+  }
+}
