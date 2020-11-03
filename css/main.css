@@ -2,6 +2,8 @@
   --accent: #353535;
   --gray: #777;
   --rust: #895433;
+  --beige: #fbe6cc;
+  --shadow: #00000025;
 }
 
 @font-face {
@@ -20,7 +22,7 @@ body {
 }
 
 nav {
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid var(--gray);
 }
 
 .navbar-brand {
@@ -30,7 +32,7 @@ nav {
 .btn.focus,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem #00000024;
+  box-shadow: 0 0 0 0.2rem var(--shadow);
 }
 
 #masthead {
