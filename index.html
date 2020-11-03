@@ -13,12 +13,12 @@
     <meta name="author" content="West Baytown Club" />
 
     <title>West Baytown Club – Home for AA Meetings 7AM-10PM</title>
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="images/usr_aa_logo.png" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
@@ -49,23 +49,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#meetings">Meetings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-us">Contact Us</a>
+              <a class="nav-link" href="#links">Links</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#links">Links</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- MASTHEAD -->
     <header id="masthead" class="py-5 mb-5">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -93,44 +93,78 @@
       </div>
     </header>
 
-    <!-- Page Content -->
-    <div id="about-us" class="container">
-      <div class="row">
-        <div class="col-md-8 mb-5">
-          <h2>About Us</h2>
+    <!-- MAIN WRAPPER -->
+    <div class="container">
+      <!-- ABOUT SECTION [START] -->
+      <div id="about" class="row">
+        <div class="col-12 mb-5">
+          <h2>About</h2>
           <hr />
-          <p>
+          <p style="font-size: 1.3rem">
+            West Baytown Club is open to the public for anyone who needs help or
+            knows someone who does.
+          </p>
+          <p style="font-size: 1.3rem">
             <i>
               I am responsible. When anyone, anywhere reaches out for help I
               want the hand of A.A. always to be there. And for that, I am
               responsible.
             </i>
           </p>
-          <a
-            style="background-color: #895433ff; color: white"
+          <button
+            style="background-color: #895433; color: white"
             class="btn btn-md"
-            href="#map"
-            >Get directions &raquo;</a
+            data-toggle="modal"
+            data-target="#aboutModal"
           >
-        </div>
-        <div class="col-md-4 mb-5">
-          <h2>Contact Us</h2>
-          <hr />
-          <address>
-            <p><strong>West Baytown Club</strong></p>
-            1020 Bowie Street
-            <br />
-            Baytown, TX 77520
-            <br />
-            <span>Phone: <a href="tel:+12814272500">(281) 427-2500</a></span>
-          </address>
+            <strong>Learn More</strong>
+          </button>
         </div>
       </div>
-      <!-- /.row -->
 
-      <!-- MEETINGS SECTION -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="aboutModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                More about West Baytown Club
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">This section is under construction.</div>
+            <div class="modal-footer">
+              <button
+                style="background-color: #895433; color: white"
+                type="button"
+                class="btn"
+                data-dismiss="modal"
+              >
+                <strong>Close</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT SECTION [END] -->
+
+      <!-- MEETINGS SECTION [START] -->
       <div id="meetings" class="row">
-        <div class="col-12 mb-5">
+        <div class="col-12">
           <h2>Meetings</h2>
           <hr />
         </div>
@@ -147,6 +181,10 @@
                 6:00pm - Six O’clock Group
               </p>
             </div>
+            <div class="card-footers">
+              <hr />
+              <p style="opacity: 0">_</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4 mb-5">
@@ -160,6 +198,10 @@
                 6:00pm - Six O’clock Group
               </p>
             </div>
+            <div class="card-footers">
+              <hr />
+              <p style="opacity: 0">_</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4 mb-5">
@@ -172,6 +214,10 @@
                 12:00pm - Lunch Bunch Group<br />
                 6:00pm - Six O’clock Group
               </p>
+            </div>
+            <div class="card-footers">
+              <hr />
+              <p style="opacity: 0">_</p>
             </div>
           </div>
         </div>
@@ -226,6 +272,10 @@
                 6:00pm - Six O’clock Group
               </p>
             </div>
+            <div class="card-footers">
+              <hr />
+              <p style="opacity: 0">_</p>
+            </div>
           </div>
         </div>
       </div>
@@ -246,13 +296,15 @@
             </div>
             <div class="card-footers">
               <hr />
-              <p>* Open-Ask it Basket</p>
+              <p>* Open-Ask-It Basket</p>
             </div>
           </div>
         </div>
       </div>
       <!-- /.row -->
+      <!-- MEETINGS SECTION [END] -->
 
+      <!-- LINKS SECTION [START] -->
       <div id="links" class="row">
         <div class="col-12 mb-5">
           <h2>Links</h2>
@@ -265,23 +317,31 @@
             >Al-Anon</a
           >
           <br />
-          <a
-            href="http://s699293309.onlinehome.us"
-            target="_blank"
-            class="links"
-            >S.E.T.A.</a
-          >
-          <br />
           <a href="http://www.12stepradio.com" target="_blank" class="links"
             >Twelve Step Radio</a
           >
         </div>
       </div>
+      <!-- LINKS SECTION [END] -->
 
-      <div id="map" class="row">
+      <!-- CONTACT SECTION [START] -->
+      <div id="contact" class="row">
         <div class="col-12 mb-5">
-          <h2>Location</h2>
+          <h2>Contact</h2>
           <hr />
+          <address>
+            <p><strong>West Baytown Club</strong></p>
+            1020 Bowie Street
+            <br />
+            Baytown, TX 77520
+            <br />
+            <span
+              >Phone:
+              <a style="text-decoration: none" href="tel:+12814272500"
+                >(281) 427-2500</a
+              ></span
+            >
+          </address>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13860.138992500202!2d-94.9838035!3d29.7187527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3de9b4cda15b68be!2sWest%20Baytown%20Club!5e0!3m2!1sen!2sus!4v1603060333624!5m2!1sen!2sus"
             width="100%"
@@ -294,8 +354,9 @@
           ></iframe>
         </div>
       </div>
+      <!-- CONTACT SECTION [END] -->
     </div>
-    <!-- /.container -->
+    <!-- MAIN WRAPPER [END] -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">

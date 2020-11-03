@@ -1,12 +1,7 @@
-/*!
- * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
- */
-
 :root {
   --accent: #353535;
   --gray: #777;
+  --rust: #895433;
 }
 
 @font-face {
@@ -21,6 +16,7 @@ html {
 body {
   padding-top: 56px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--accent);
 }
 
 nav {
@@ -29,6 +25,12 @@ nav {
 
 .navbar-brand {
   margin-right: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #00000024;
 }
 
 #masthead {
@@ -57,6 +59,16 @@ nav {
 
 .card-footers {
   padding: 0 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--rust);
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
